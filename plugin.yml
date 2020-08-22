@@ -1,0 +1,10 @@
+---
+name: FlashItem
+version: 1.0.2
+main: DavidFlash\FlashItem\Main
+api: 3.14.0
+
+commands:
+  flashitem:
+    description: "Give yourself custom item!"
+...
