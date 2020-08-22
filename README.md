@@ -1,2 +1,2 @@
-# FlashItem
- FlashItem plugin for PocketMine! Run commands from item!
+# FlashItem2
+ Run Command With Custom Item!
