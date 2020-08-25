@@ -20,6 +20,7 @@ use pocketmine\event\player\PlayerInteractEvent;
 use DavidFlash\FlashItem\libs\jojoe77777\FormAPI\SimpleForm;
 use pocketmine\item\ItemFactory;
 use pocketmine\item\Item;
+use pocketmine\event\player\PlayerJoinEvent;
 
 class Main extends PluginBase implements Listener {
 
@@ -38,6 +39,17 @@ class Main extends PluginBase implements Listener {
         return true;
       }
       return true;
+    }
+    public function onJoin(PlayerJoinEvent $event){
+          $player = $event->getPlayer();
+      if($this->getConfig()->get("enabled") === true){
+        $item = $this->getConfig()->get("item");
+        $name = $this->getConfig()->get("name");
+
+          $flashitem = ItemFactory::get($item);
+          $flashitem->setCustomName($name);
+        $player->getInventory()->addItem($flashitem);
+      }
     }
     public function onInteraction(PlayerInteractEvent $event){
 

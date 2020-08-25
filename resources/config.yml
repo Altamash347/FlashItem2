@@ -1,6 +1,9 @@
 # Configuration file for FlashItem originaly made by David Flash
 # NOW COMPATIBLE WITH FLASHCORE!!
 
+# Do you want to give the item when player joins?
+enabled: true
+
 # Item to open menu
 item: 345
 
