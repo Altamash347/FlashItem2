@@ -43,9 +43,6 @@ class Main extends PluginBase implements Listener {
   			$item = $this->getConfig()->get("item");
   			$name = $this->getConfig()->get("name");
 
-  			if($event->getItem()->getId()==$item){
-  				if($event->getItem()->getCustomName() === $name){
-
   					$form = new SimpleForm(function (Player $sender,  $data) {
   						switch($data) {
   						case 0:
@@ -163,10 +160,6 @@ class Main extends PluginBase implements Listener {
   						$form->addButton("$minigame5\n§7Click to teleport!");
   						$form->addButton("$minigame6\n§7Click to teleport!");
   						$form->sendToPlayer($player);
-
-  						return true;
-  					     }
-  		      }
         return true;
       }
       return true;
