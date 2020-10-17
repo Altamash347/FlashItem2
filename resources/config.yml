@@ -1,32 +1,29 @@
-# Configuration file for FlashItem originaly made by David Flash
-# NOW COMPATIBLE WITH FLASHCORE!!
+# Configuration file for FlashItem2 originally made by David Flash
 
 # Do you want to give the item when player joins?
 enabled: true
 
-# Item to open menu
-item: 345
+# Item to open menu (Has to be numeric)
+item: 345 #Default: 345 [Compass]
 
 # Name of the item
-
 name: "§l§aNavigator"
 
 # Minigame is name that will appear in menu and chat
-
 minigame1: Minigame
-command1: say Nice
+command1: say This is just a example of a command! Change this in config.yml
 
 minigame2: Minigame2
-command2: say Nice2 lol
+command2: say This is just a example of a command! Change this in config.yml
 
 minigame3: Minigame3
-command3: say Just change this
+command3: say This is just a example of a command! Change this in config.yml
 
 minigame4: Minigame4
-command4: say Cmon man
+command4: say This is just a example of a command! Change this in config.yml
 
 minigame5: Minigame5
-command5: say I had to put 5 minutes into this
+command5: say This is just a example of a command! Change this in config.yml
 
 minigame6: Minigame6
-command6: say Finally, got to config.yml
+command6: say No one was harmed during the making of this plugin 
