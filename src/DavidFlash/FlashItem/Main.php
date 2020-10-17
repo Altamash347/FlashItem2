@@ -30,8 +30,8 @@ class Main extends PluginBase implements Listener {
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
       if($command->getName() === "flashitem"){
-        $item = $this->getConfig()->get("item");
-        $name = $this->getConfig()->get("name");
+        $item = $this->getConfig()->getNested("item");
+        $name = $this->getConfig()->getNested("name");
 
           $flashitem = ItemFactory::get($item);
           $flashitem->setCustomName($name);
@@ -39,11 +39,7 @@ class Main extends PluginBase implements Listener {
         return true;
       }
       if($command->getName() === "openflashitem"){
-        $player = $sender;
-  			$item = $this->getConfig()->get("item");
-  			$name = $this->getConfig()->get("name");
-
-          $this->openFlashItemMenu($player);
+          $this->openFlashItemMenu($sender);
         return true;
       }
       return true;
@@ -75,7 +71,9 @@ class Main extends PluginBase implements Listener {
 	}
     public function openFlashItemMenu(Player $player){
       $form = new SimpleForm(function (Player $sender,  $data) {
-        if($data == null) return true;
+        if($data === null){
+            return true;
+        }
         switch($data) {
         case 0:
             $item = $this->getConfig()->get("item");
@@ -91,7 +89,6 @@ class Main extends PluginBase implements Listener {
         $sender->getInventory()->removeItem($item);
         $sender->sendMessage("Transfering to $minigame1..");
         $this->getServer()->dispatchCommand($sender, $command1);
-
         break;
         case 1:
             $item = $this->getConfig()->get("item");
