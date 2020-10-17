@@ -1,7 +1,7 @@
 ---
 name: FlashItem2
 version: 1.0.0
-main: DavidFlash\FlashItem\Main
+main: DavidFlash\FlashItem2\Main
 api: 3.14.0
 
 commands:

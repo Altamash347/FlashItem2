@@ -3,7 +3,7 @@ build-by-default: true
 branches:
 - master
 projects:
-  FlashItem:
+  FlashItem2:
     path: ""
     libs:
       - src: jojoe77777/FormAPI/libFormAPI
