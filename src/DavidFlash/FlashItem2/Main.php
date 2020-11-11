@@ -181,10 +181,10 @@ class Main extends PluginBase implements Listener {
 
       $form->setTitle("Minigames");
       $form->setContent("Choose location");
-      $form->addButton("$minigame1\n§7Click to teleport!");
-      $form->addButton("$minigame2\n§7Click to teleport!");
-      $form->addButton("$minigame3\n§7Click to teleport!");
-      $form->addButton("$minigame4\n§7Click to teleport!");
+      $form->addButton("$minigame1\n§7Click to Manage");
+      $form->addButton("$minigame2\n§7Click to Open Shop");
+      $form->addButton("$minigame3\n§7Click to Teleport!");
+      $form->addButton("$minigame4\n§7$10000");
       $form->addButton("$minigame5\n§7Click to teleport!");
       $form->addButton("$minigame6\n§7Click to teleport!");
       $form->sendToPlayer($player);
